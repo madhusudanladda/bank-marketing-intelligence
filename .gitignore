@@ -1,0 +1,31 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local data (re-download/rebuild with src.data_loader)
+data/raw/*
+!data/raw/.gitkeep
+
+# Generated model artifacts (recreate with src.train)
+artifacts/*.joblib
+
+# Runtime logs
+logs/*.log
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Environment secrets
+.env
+.env.*
+!.env.example

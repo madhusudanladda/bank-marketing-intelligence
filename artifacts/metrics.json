@@ -1,0 +1,80 @@
+{
+  "best_model": "HistGradientBoosting",
+  "test_roc_auc": 0.806,
+  "test_pr_auc": 0.4626,
+  "confusion_matrix": [
+    [
+      6775,
+      1210
+    ],
+    [
+      382,
+      676
+    ]
+  ],
+  "classification_report": {
+    "0": {
+      "precision": 0.9466256811513204,
+      "recall": 0.8484658735128365,
+      "f1-score": 0.8948619733192444,
+      "support": 7985.0
+    },
+    "1": {
+      "precision": 0.3584305408271474,
+      "recall": 0.6389413988657845,
+      "f1-score": 0.4592391304347826,
+      "support": 1058.0
+    },
+    "accuracy": 0.8239522282428398,
+    "macro avg": {
+      "precision": 0.6525281109892339,
+      "recall": 0.7437036361893106,
+      "f1-score": 0.6770505518770136,
+      "support": 9043.0
+    },
+    "weighted avg": {
+      "precision": 0.8778088661050996,
+      "recall": 0.8239522282428398,
+      "f1-score": 0.8438955940455786,
+      "support": 9043.0
+    }
+  },
+  "leaderboard": [
+    {
+      "model": "LogisticRegression",
+      "cv_roc_auc": 0.7637,
+      "cv_f1": 0.3726
+    },
+    {
+      "model": "RandomForest",
+      "cv_roc_auc": 0.7816,
+      "cv_f1": 0.4181
+    },
+    {
+      "model": "HistGradientBoosting",
+      "cv_roc_auc": 0.7973,
+      "cv_f1": 0.4495
+    }
+  ],
+  "features": {
+    "numerical": [
+      "age",
+      "balance",
+      "day_of_week",
+      "campaign",
+      "pdays",
+      "previous"
+    ],
+    "categorical": [
+      "job",
+      "marital",
+      "education",
+      "default",
+      "housing",
+      "loan",
+      "contact",
+      "month",
+      "poutcome"
+    ]
+  }
+}
